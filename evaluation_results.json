@@ -1,0 +1,21 @@
+{
+    "dataset_summary": {
+        "total_samples": 5000,
+        "male_count": 2967,
+        "female_count": 2033
+    },
+    "biased_model_metrics": {
+        "accuracy": 1.0,
+        "disparate_impact": 0.4975,
+        "statistical_parity_difference": -0.0685,
+        "unprivileged_selection_rate": 0.0678,
+        "privileged_selection_rate": 0.1363
+    },
+    "mitigated_model_metrics": {
+        "accuracy": 1.0,
+        "disparate_impact": 0.4975,
+        "statistical_parity_difference": -0.0685,
+        "unprivileged_selection_rate": 0.0678,
+        "privileged_selection_rate": 0.1363
+    }
+}

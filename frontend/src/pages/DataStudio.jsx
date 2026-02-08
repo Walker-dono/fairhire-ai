@@ -25,14 +25,19 @@ const DataStudio = () => {
         <div className="container-fluid">
             <div className="d-flex justify-content-between align-items-center mb-4">
                 <h2 className="text-white">Data Studio</h2>
-                <button
-                    className="btn btn-neon"
-                    onClick={handleGenerate}
-                    disabled={loading}
-                >
-                    {loading ? <i className="fas fa-spinner fa-spin me-2"></i> : <i className="fas fa-bolt me-2"></i>}
-                    Generate Synthetic Data
-                </button>
+                <div className="d-flex gap-2">
+                    <a href="/api/download/dataset" className="btn btn-outline-light" target="_blank" download>
+                        <i className="fas fa-file-csv me-2"></i> Download Dataset
+                    </a>
+                    <button
+                        className="btn btn-neon"
+                        onClick={handleGenerate}
+                        disabled={loading}
+                    >
+                        {loading ? <i className="fas fa-spinner fa-spin me-2"></i> : <i className="fas fa-bolt me-2"></i>}
+                        Generate Synthetic Data
+                    </button>
+                </div>
             </div>
 
             {stats && (

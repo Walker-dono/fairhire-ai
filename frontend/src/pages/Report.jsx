@@ -38,9 +38,14 @@ const Report = () => {
                         <i className="fas fa-eye me-2"></i> Preview Report
                     </button>
                     {report && (
-                        <button className="btn btn-outline-light px-4" onClick={downloadTxt}>
-                            <i className="fas fa-download me-2"></i> Download TXT
-                        </button>
+                        <>
+                            <button className="btn btn-outline-light px-4" onClick={downloadTxt}>
+                                <i className="fas fa-download me-2"></i> Download TXT
+                            </button>
+                            <a href="/api/download/results" className="btn btn-outline-info px-4" target="_blank" download>
+                                <i className="fas fa-file-code me-2"></i> Download JSON
+                            </a>
+                        </>
                     )}
                 </div>
 
